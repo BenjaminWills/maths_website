@@ -10,12 +10,20 @@ function App() {
 
   useEffect(() => {
     const storedTodos = JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEY))
-    if (storedTodos) setTodos(storedTodos)
+    setTodos(storedTodos)
+    console.log(storedTodos)
   },[]) // Loading from local storage once upon refresh
 
   useEffect(() => {
     localStorage.setItem(LOCAL_STORAGE_KEY,JSON.stringify(todos))
   },[todos]) // Saving to local storage
+
+  function toggleTodo(id){
+    const newTodos = [...todos]
+    const todo = newTodos.find(todo => todo.id === id)
+    todo.complete = !todo.complete
+    setTodos(newTodos)
+  }
 
   function handleAddTodo(e) {
     const name = todoNameRef.current.value
@@ -28,7 +36,7 @@ function App() {
 
   return (
     <>
-      <TodoList todos={todos} />
+      <TodoList todos={todos} toggleTodo = {toggleTodo}/>
       <input ref={todoNameRef} type="text" />
       <button onClick={handleAddTodo}> Add Todo</button>
       <button>clear complete</button>
