@@ -11,7 +11,6 @@ function App() {
   useEffect(() => {
     const storedTodos = JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEY))
     setTodos(storedTodos)
-    console.log(storedTodos)
   },[]) // Loading from local storage once upon refresh
 
   useEffect(() => {
