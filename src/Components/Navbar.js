@@ -16,11 +16,11 @@ export default function Navbar() {
         <a href="/">Algebra</a>
         <a href="/">Calculus</a>
         <a href="/">Geometry</a>
-        <button onClick={showNavBar}>
+        <button className="nav-btn nav-close-btn" onClick={showNavBar}>
           <FaTimes />
         </button>
       </nav>
-      <button onClick={showNavBar}>
+      <button className="nav-btn" onClick={showNavBar}>
         <FaBars />
       </button>
     </header>
