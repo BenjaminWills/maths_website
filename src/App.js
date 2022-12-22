@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import TodoList from './Components/TodoList';
 import { v4 as uuidv4 } from 'uuid';
+import Navbar from './Components/Navbar';
 
 const LOCAL_STORAGE_KEY = 'todoApp.todos' // storing the changes locally
 
@@ -40,11 +41,16 @@ function App() {
 
   return (
     <>
-      <TodoList todos={todos} toggleTodo = {toggleTodo}/>
-      <input ref={todoNameRef} type="text" />
-      <button onClick={handleAddTodo}> Add Todo</button>
-      <button onClick={handleClearTodos}>clear complete</button>
-      <div>{todos.filter(todo => !todo.complete).length}</div>
+      <React.Fragment>
+        <Navbar />
+      </React.Fragment>
+      <div>
+        <TodoList todos={todos} toggleTodo = {toggleTodo}/>
+        <input ref={todoNameRef} type="text" />
+        <button onClick={handleAddTodo}> Add Todo</button>
+        <button onClick={handleClearTodos}>clear complete</button>
+        <div>{todos.filter(todo => !todo.complete).length}</div>
+      </div>
     </>
   )
 }
