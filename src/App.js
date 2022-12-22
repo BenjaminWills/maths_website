@@ -2,6 +2,9 @@ import React, { useState, useRef, useEffect } from "react";
 import TodoList from "./Components/TodoList";
 import { v4 as uuidv4 } from "uuid";
 import Navbar from "./Components/Navbar";
+import Algebra from "./pages/Algebra";
+import Geometry from "./pages/Geometry";
+import Calculus from "./pages/Calculus";
 
 const LOCAL_STORAGE_KEY = "todoApp.todos"; // storing the changes locally
 
@@ -50,6 +53,11 @@ function App() {
         <button onClick={handleAddTodo}> Add Todo</button>
         <button onClick={handleClearTodos}>clear complete</button>
         <div>{todos.filter((todo) => !todo.complete).length}</div>
+      </div>
+      <div>
+        <Algebra />
+        <Calculus />
+        <Geometry />
       </div>
     </>
   );

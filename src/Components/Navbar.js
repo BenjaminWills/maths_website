@@ -15,9 +15,9 @@ export default function Navbar() {
       <h3 href="/">Bens math project</h3>
       <nav>
         <a href="/">Home</a>
-        <a href="/subject/algebra">Algebra</a>
-        <a href="/subject/calculus">Calculus</a>
-        <a href="/subject/geometry">Geometry</a>
+        <a href="/algebra">Algebra</a>
+        <a href="/calculus">Calculus</a>
+        <a href="/geometry">Geometry</a>
         <button className="nav-btn nav-close-btn" onClick={showNavBar}>
           <FaTimes />
         </button>
