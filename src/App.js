@@ -1,5 +1,6 @@
-import React, { useState, useRef, useEffect } from "react";
+import React from "react";
 import Navbar from "./Components/Navbar";
+import { Outlet } from "react-router-dom";
 
 function App() {
   return (
@@ -7,6 +8,9 @@ function App() {
       <React.Fragment>
         <Navbar />
       </React.Fragment>
+      <div id="detail">
+        <Outlet />
+      </div>
     </>
   );
 }
