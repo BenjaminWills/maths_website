@@ -7,6 +7,9 @@ export default function Algebra() {
   const first_intro_algebra_step_2 = `$$x-2+2=4+2$$`;
   const first_intro_algebra_step_3 = `$$x+0=6$$`;
   const first_intro_algebra_step_4 = `$$x=6$$`;
+  const first_order_of_operations_step_1 = `$$7 + 3 \\ / \\ 3 + 4$$`;
+  const first_order_of_operations_step_2 = `$$\\rightarrow 7 + 1 + 4$$`;
+  const first_order_of_operations_step_3 = `$$\\rightarrow 12$$`;
   return (
     <>
       <div>
@@ -69,6 +72,7 @@ export default function Algebra() {
               other.
             </strong>
           </p>
+          <br></br>
           <h2>Order of operations</h2>
           <p>
             What you will learn whilst reading through this website - which I
@@ -77,6 +81,33 @@ export default function Algebra() {
             we will exclusively be using fractions. Some of you may be thinking:
             this is a bit dramatic isn't it? Well read this:
           </p>
+          <div className="center">
+            <Latex>{first_order_of_operations_step_1}</Latex>
+          </div>
+          <p>
+            Riddle me this: what is the order of operations here?! do we add
+            first and then divide, do we divide first and then add. As I sit
+            here shaking from rage, I value my ability to choose not to use
+            these demonic symbols. There are two solutions to this problem.
+          </p>
+          <div className="center">
+            <li>BIDMAS</li>
+            <li>Fractions</li>
+          </div>
+          <br></br>
+          <p>
+            BIDMAS stands for brackets, indices, division, multiplication,
+            addition, subtraction, this is the order of operations that we use
+            to wrangle the beast that is the division symbol. So we can solve
+            our problem above:
+          </p>
+          <div className="center">
+            <Latex>{first_order_of_operations_step_1}</Latex>
+            <br></br>
+            <Latex>{first_order_of_operations_step_2}</Latex>
+            <br></br>
+            <Latex>{first_order_of_operations_step_3}</Latex>
+          </div>
         </div>
       </div>
     </>
