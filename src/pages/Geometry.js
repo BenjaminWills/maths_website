@@ -1,5 +1,13 @@
 import React from "react";
+import Navbar from "../Components/Navbar";
 
 export default function Geometry() {
-  return <div>Geometry</div>;
+  return (
+    <>
+      <React.Fragment>
+        <Navbar />
+      </React.Fragment>
+      <div>Calculus</div>
+    </>
+  );
 }

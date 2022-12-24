@@ -1,5 +1,13 @@
 import React from "react";
+import Navbar from "../Components/Navbar";
 
 export default function Algebra() {
-  return <div>Algebra</div>;
+  return (
+    <>
+      <React.Fragment>
+        <Navbar />
+      </React.Fragment>
+      <div>Algebra</div>
+    </>
+  );
 }
