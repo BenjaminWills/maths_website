@@ -69,6 +69,14 @@ export default function Algebra() {
               other.
             </strong>
           </p>
+          <h2>Order of operations</h2>
+          <p>
+            What you will learn whilst reading through this website - which I
+            hope you will - is that I HATE the ÷ symbol. All it causes is chaos
+            and confusion, it is possibly the worst thing in all of maths. Thus
+            we will exclusively be using fractions. Some of you may be thinking:
+            this is a bit dramatic isn't it? Well read this:
+          </p>
         </div>
       </div>
     </>
