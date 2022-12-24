@@ -10,7 +10,7 @@ export default function Navbar() {
     <header>
       <h3 href="/">Bens math project</h3>
       <nav>
-        <a href="/">Home</a>
+        <a href="/home">Home</a>
         <a href="/algebra">Algebra</a>
         <a href="/calculus">Calculus</a>
         <a href="/geometry">Geometry</a>
