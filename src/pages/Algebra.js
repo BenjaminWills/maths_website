@@ -10,6 +10,7 @@ export default function Algebra() {
   const first_order_of_operations_step_1 = `$$7 + 3 \\ / \\ 3 + 4$$`;
   const first_order_of_operations_step_2 = `$$\\rightarrow 7 + 1 + 4$$`;
   const first_order_of_operations_step_3 = `$$\\rightarrow 12$$`;
+  const second_order_of_operations_step_1 = `$$7+\\frac{3}{3}+4$$`;
   return (
     <>
       <div>
@@ -108,6 +109,21 @@ export default function Algebra() {
             <br></br>
             <Latex>{first_order_of_operations_step_3}</Latex>
           </div>
+          <p>
+            {" "}
+            To summarise, we see that we need to divide first, so we divide 3 by
+            3 to get 1. Then we add, and bosh - the equation is defeated. Now
+            for the superior option, we have fractions. Watch how simple this
+            becomes
+          </p>
+          <div className="center">
+            <Latex>{second_order_of_operations_step_1}</Latex>
+            <br></br>
+            <Latex>{first_order_of_operations_step_2}</Latex>
+            <br></br>
+            <Latex>{first_order_of_operations_step_3}</Latex>
+          </div>
+          <p>See! No BIDMAS required.</p>
         </div>
       </div>
     </>
