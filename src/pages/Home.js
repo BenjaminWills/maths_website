@@ -7,7 +7,7 @@ export default function Home() {
       <React.Fragment>
         <Navbar />
       </React.Fragment>
-      <div>Calculus</div>
+      <div>Home</div>
     </>
   );
 }

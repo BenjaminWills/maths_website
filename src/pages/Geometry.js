@@ -7,7 +7,7 @@ export default function Geometry() {
       <React.Fragment>
         <Navbar />
       </React.Fragment>
-      <div>Calculus</div>
+      <div>Gemeotry</div>
     </>
   );
 }
