@@ -13,26 +13,28 @@ const router = createBrowserRouter([
     path: "/",
     element: <App />,
     errorElement: <ErrorPage />,
-  },
-  {
-    path: "/home",
-    element: <Home />,
-    errorElement: <ErrorPage />,
-  },
-  {
-    path: "/algebra",
-    element: <Algebra />,
-    errorElement: <ErrorPage />,
-  },
-  {
-    path: "/geometry",
-    element: <Geometry />,
-    errorElement: <ErrorPage />,
-  },
-  {
-    path: "/calculus",
-    element: <Calculus />,
-    errorElement: <ErrorPage />,
+    children: [
+      {
+        path: "/home",
+        element: <Home />,
+        errorElement: <ErrorPage />,
+      },
+      {
+        path: "/algebra",
+        element: <Algebra />,
+        errorElement: <ErrorPage />,
+      },
+      {
+        path: "/geometry",
+        element: <Geometry />,
+        errorElement: <ErrorPage />,
+      },
+      {
+        path: "/calculus",
+        element: <Calculus />,
+        errorElement: <ErrorPage />,
+      },
+    ],
   },
 ]);
 

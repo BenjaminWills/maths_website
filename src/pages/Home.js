@@ -4,9 +4,6 @@ import Navbar from "../Components/Navbar";
 export default function Home() {
   return (
     <>
-      <React.Fragment>
-        <Navbar />
-      </React.Fragment>
       <div>Home</div>
     </>
   );
