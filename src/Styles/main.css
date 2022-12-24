@@ -36,6 +36,15 @@ h1 {
   text-align: center;
 }
 
+#textBox {
+  background-color: var(--mainColor);
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 25px;
+}
+
 nav a {
   margin: 0 2rem;
   color: var(--textColor);
