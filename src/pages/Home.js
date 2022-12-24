@@ -1,5 +1,4 @@
 import React from "react";
-var Latex = require("react-latex");
 
 export default function Home() {
   return (
