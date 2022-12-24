@@ -1,4 +1,5 @@
 import React from "react";
+import randomEquationGenerator from "../Components/algebra_components/randomEquationGenerator";
 var Latex = require("react-latex");
 
 export default function Algebra() {
@@ -74,6 +75,7 @@ export default function Algebra() {
             </strong>
           </p>
           <br></br>
+          <randomEquationGenerator />
           <h2>Order of operations</h2>
           <p>
             What you will learn whilst reading through this website - which I
