@@ -25,8 +25,12 @@ export default function Algebra() {
           <p>
             You may find your self wondering: what is the point of algebra? We
             learn it in schools and never use it again! While in some peoples
-            case this is true, we can make our life easier using algebra. So
-            lets jump in. So lets consider the following problem:
+            case this is true, we can make our life easier using algebra.
+            Further, it is the basis of all of maths! We can use it to solve so
+            many complex problems that we could not solve otherwise, such as the
+            orbit of planets around planets, or the computer screen you're
+            reading this on now. So lets jump in, consider the following
+            problem:
           </p>
           <br></br>
           <div className="center">
