@@ -39,7 +39,7 @@ h1 {
 #textBox {
   border: 3px solid var(--mainColor);
   width: 60%;
-  height: 200px;
+  height: 20%;
   margin: auto;
   padding: 10px;
   border-radius: 25px;
