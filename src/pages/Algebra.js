@@ -13,6 +13,10 @@ export default function Algebra() {
   const first_order_of_operations_step_2 = `$$\\rightarrow 7 + 1 + 4$$`;
   const first_order_of_operations_step_3 = `$$\\rightarrow 12$$`;
   const second_order_of_operations_step_1 = `$$7+\\frac{3}{3}+4$$`;
+  const inequalityStep1 = `$$x + 3 > 2x$$`;
+  const inequalityStep2 = `$$3 > x$$`;
+  const appleInequality = `$$ 0.1x > 0.06x + 0.45 $$`;
+  const coefficientExample = `$$ \\red{12} \\blue{x} \\orange{-} \\green{4} = \\green{7} $$`;
   return (
     <>
       <div>
@@ -132,8 +136,52 @@ export default function Algebra() {
           <div className="center">
             <OrderofOperationsEquationGenerator />
           </div>
+          <h2>Inequalities</h2>
+          <p>
+            Another very useful algebraic tool is the inequality. These allow us
+            to express a whole set of numbers, for example: having more than 6
+            apples translates to x > 6, where x is the number of apples. This
+            becomes very powerful in applications of maths. For now we will
+            consider some number problems to have a soft introduction to
+            Inequalities. For example: which number when you add three to it is
+            always greater than that number multiplied by 2?
+          </p>
+          <div className="center">
+            <Latex>{inequalityStep1}</Latex>
+            <br></br>
+            <span>minus x from both sides</span>
+            <br></br>
+            <Latex>{inequalityStep2}</Latex>
+          </div>
+          <p>
+            So we can see that if x is less than 3, the original inequality
+            holds. This has many cool applications in constrained optimisation
+            problems! Think about if your business sells apples which cost 6
+            pence to pick and 45 p to take to market, and you sell them for 10
+            pence each, we can formulate it as the following ineqality, where x
+            is the number of apples we need to sell to make a profit:
+          </p>
+          <div className="center">
+            <Latex>{appleInequality}</Latex>
+          </div>
+          <h2>Algebra Jargon</h2>
+          <p>
+            When writing an equation its important that we can refer to specific
+            parts of it to save time, so below I have highlighted some elements:
+          </p>
+          <div className="center">
+            <Latex>{coefficientExample}</Latex>
+          </div>
+          <p>
+            So here the red number is the coefficient of x. In blue we have x,
+            the variable. In orange we have the operator - the minus sign in
+            this case. Finally in green we have constants, these are called
+            constants as they are known numbers, as opposed to x which is
+            unknown.
+          </p>
         </div>
       </div>
+      <br></br>
     </>
   );
 }
