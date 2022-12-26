@@ -1,5 +1,5 @@
 import React from "react";
-import RandomEquationGenerator from "../Components/Algebra_components/RandomEquationGenerator";
+import RandomEquationGenerator from "../Components/AlgebraComponents/RandomEquationGenerator";
 
 export default function Geometry() {
   return (
