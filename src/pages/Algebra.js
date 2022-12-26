@@ -20,6 +20,8 @@ export default function Algebra() {
   const exponentExample1 = `$$ 2^4 = 2 * 2 * 2 * 2 = 16 $$`;
   const exponentExample2 = `$$ x^{3} = x * x * x $$`;
   const exponentExample3 = `$$ (x^2y)^3 = x^2y * x^2y * x^2y = x^6y^3 $$`;
+  const polynomialExample = `$$ x^2 + 3x + 1 $$`;
+  const likeTerms = `$$ 7x, 9x, 10x $$`;
   return (
     <>
       <div>
@@ -195,9 +197,35 @@ export default function Algebra() {
             <br></br>
             <Latex>{exponentExample3}</Latex>
           </div>
+          <h3>Polynomial</h3>
+          <p>
+            A polynomial is an equation made up of constants, and exponentiated
+            variables. A polynomial has an order, that is simply the largest
+            exponent.
+          </p>
+          <div className="center">
+            <Latex>{polynomialExample}</Latex>
+          </div>
+          <p>
+            This is an order 2 polynomial, as the largest exponent is 2. An
+            order 2 polynomial is also known as a quadratic.
+          </p>
+          <h3>Like Terms</h3>
+          <p>
+            Finally we have collecting like terms, these are terms with a common
+            variable, for example:
+          </p>
+          <div className="center">
+            <Latex>{likeTerms}</Latex>
+          </div>
+          <p>
+            are like terms, and thus we can add them together - you CANNOT add
+            non alike terms.
+          </p>
         </div>
       </div>
       <br></br>
+      <div id="textBox"></div>
     </>
   );
 }
