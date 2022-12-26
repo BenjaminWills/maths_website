@@ -31,7 +31,7 @@ export default function RandomEquationGenerator() {
     <>
       <div>
         <h3>
-          x - {number1} = {number2} {`\t \t \t `}
+          <Latex>{original_equation}</Latex>
           <button type="button" onClick={generateEquation}>
             generate equation
           </button>
@@ -46,6 +46,8 @@ export default function RandomEquationGenerator() {
       <div>
         {visible && (
           <div>
+            <Latex>{original_equation}</Latex>
+            <br></br>
             <span>{step1}</span>
             <br></br>
             <Latex>{verboseStep1}</Latex>
