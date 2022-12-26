@@ -12,7 +12,7 @@ export default function OrderofOperationsEquationGenerator() {
   const step1 = `add ${number1} to both sides`;
   const verboseStep1 = `$$ ${number3}x = ${number1 + number2} $$`;
   const step2 = `divide both sides by ${number3}`;
-  const verboseStep2 = `$$ $x = \\frac{${number1 + number2}}{${number3}} $$`;
+  const verboseStep2 = `$$ x = \\frac{${number1 + number2}}{${number3}} $$`;
 
   function generateEquation() {
     setNumber1((prevNum) => Math.floor(Math.random() * 10));
