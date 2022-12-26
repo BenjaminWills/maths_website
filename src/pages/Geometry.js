@@ -1,9 +1,11 @@
 import React from "react";
+import RandomEquationGenerator from "../Components/algebra_components/RandomEquationGenerator";
 
 export default function Geometry() {
   return (
     <>
-      <div>Gemeotry</div>
+      <div>Geometry</div>
+      <RandomEquationGenerator></RandomEquationGenerator>
     </>
   );
 }

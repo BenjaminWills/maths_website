@@ -1,12 +1,14 @@
 import React from "react";
 
-export default function randomEquationGenerator() {
+export default function RandomEquationGenerator() {
   function sayHello() {
     alert("You clicked me!");
   }
   return (
     <div>
-      <button onClick={sayHello}>generate equation</button>
+      <button type="button" onClick={sayHello}>
+        generate equation
+      </button>
     </div>
   );
 }
