@@ -43,7 +43,6 @@ export default function OrderofOperationsEquationGenerator() {
       <button type="button" onClick={showSolution}>
         what is x?
       </button>
-      <br></br>
       <button type="button" onClick={makeVisible}>
         show steps
       </button>
