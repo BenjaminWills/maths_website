@@ -1,5 +1,6 @@
 import React from "react";
 import RandomEquationGenerator from "../Components/AlgebraComponents/RandomEquationGenerator";
+import OrderofOperationsEquationGenerator from "../Components/AlgebraComponents/OrderofOperationsEquationGenerator";
 var Latex = require("react-latex");
 
 export default function Algebra() {
@@ -128,6 +129,9 @@ export default function Algebra() {
             <Latex>{first_order_of_operations_step_3}</Latex>
           </div>
           <p>See! No BIDMAS required.</p>
+          <div className="center">
+            <OrderofOperationsEquationGenerator />
+          </div>
         </div>
       </div>
     </>
