@@ -2,11 +2,11 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import ErrorPage from "./pages/ErrorPage";
-import Home from "./pages/Home";
-import Algebra from "./pages/Algebra";
-import Geometry from "./pages/Geometry";
-import Calculus from "./pages/Calculus";
+import ErrorPage from "./Pages/ErrorPage";
+import Home from "./Pages/Home";
+import Algebra from "./Pages/Algebra";
+import Geometry from "./Pages/Geometry";
+import Calculus from "./Pages/Calculus";
 
 const router = createBrowserRouter([
   {
