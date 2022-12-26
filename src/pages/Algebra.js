@@ -1,5 +1,5 @@
 import React from "react";
-import RandomEquationGenerator from "../Components/algebra_components/RandomEquationGenerator";
+import RandomEquationGenerator from "../Components/AlgebraComponents/RandomEquationGenerator";
 var Latex = require("react-latex");
 
 export default function Algebra() {
