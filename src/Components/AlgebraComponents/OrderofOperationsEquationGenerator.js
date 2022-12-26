@@ -17,7 +17,7 @@ export default function OrderofOperationsEquationGenerator() {
   function generateEquation() {
     setNumber1((prevNum) => Math.floor(Math.random() * 10));
     setNumber2((prevNum) => Math.floor(Math.random() * 10));
-    setNumber3((prevNum) => Math.floor(Math.random() * 10));
+    setNumber3((prevNum) => Math.floor(Math.random() * 10) + 1);
   }
 
   function getSolution() {
