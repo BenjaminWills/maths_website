@@ -17,6 +17,9 @@ export default function Algebra() {
   const inequalityStep2 = `$$3 > x$$`;
   const appleInequality = `$$ 0.1x > 0.06x + 0.45 $$`;
   const coefficientExample = `$$ \\red{12} \\blue{x} \\orange{-} \\green{4} = \\green{7} $$`;
+  const exponentExample1 = `$$ 2^4 = 2 * 2 * 2 * 2 = 16 $$`;
+  const exponentExample2 = `$$ x^{3} = x * x * x $$`;
+  const exponentExample3 = `$$ (x^2y)^3 = x^2y * x^2y * x^2y = x^6y^3 $$`;
   return (
     <>
       <div>
@@ -165,6 +168,7 @@ export default function Algebra() {
             <Latex>{appleInequality}</Latex>
           </div>
           <h2>Algebra Jargon</h2>
+          <h3>Parts of an equation</h3>
           <p>
             When writing an equation its important that we can refer to specific
             parts of it to save time, so below I have highlighted some elements:
@@ -179,6 +183,18 @@ export default function Algebra() {
             constants as they are known numbers, as opposed to x which is
             unknown.
           </p>
+          <h3>Exponents</h3>
+          <p>
+            An exponent represents the number of repeated multiplications of the
+            same number. It easiest to show with an example.
+          </p>
+          <div className="center">
+            <Latex>{exponentExample1}</Latex>
+            <br></br>
+            <Latex>{exponentExample2}</Latex>
+            <br></br>
+            <Latex>{exponentExample3}</Latex>
+          </div>
         </div>
       </div>
       <br></br>
